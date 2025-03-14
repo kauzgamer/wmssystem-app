@@ -1,0 +1,23 @@
+{
+  "name": "wmssystem",
+  "version": "1.0.0",
+  "description": "Sistema de Gestão de Armazém (WMS) com interface desktop e mobile",
+  "scripts": {
+    "build:css": "tailwindcss -i ./static/src/main.css -o ./static/css/tailwind.css",
+    "watch:css": "tailwindcss -i ./static/src/main.css -o ./static/css/tailwind.css --watch",
+    "build": "npm run build:css -- --minify"
+  },
+  "keywords": [
+    "wms",
+    "django",
+    "warehouse",
+    "management"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  }
+}
