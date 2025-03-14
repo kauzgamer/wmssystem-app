@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: #3570bf;
+    --primary-dark: #244b7e;
+    --primary-light: #5a99e6;
+  }
+  
+  h1 {
+    @apply text-2xl font-bold mb-4;
+  }
+  
+  h2 {
+    @apply text-xl font-bold mb-3;
+  }
+  
+  h3 {
+    @apply text-lg font-bold mb-2;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-400 text-white hover:bg-primary-600;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+  }
+  
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-soft p-6;
+  }
+  
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-primary-400 to-primary-600;
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-inner-soft {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  }
+  
+  .hover-lift {
+    @apply transition-transform duration-200;
+  }
+  
+  .hover-lift:hover {
+    @apply transform -translate-y-1;
+  }
+}
